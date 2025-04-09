@@ -1,9 +1,9 @@
-# Linux System Monitor - ESP32 and TFT ILI9341
+# Linux System Monitor - ESP32 and TFT-ILI9341 2.4"
 
  ![alt text](/assets/imagen.jpg "ESP32 TFT")
  ![alt text](/assets/main_image.jpg "Bluetooth-System-Monitor")
 
- A handy little system information monitor using and ESP32 + ILI9488 TFT. Receives data over Serial Bluetooth and thus giving you the option to have it far away from your actual computer. On the computer side you can write your own program for writing over Serial BT, but I have provided python scripts for both Windows and MacOS. Instructions on how to install and use these are below.
+A handy little system information monitor using an **ESP32 + ILI9488 2.4 inch TFT**. It receives data via **serial Bluetooth** or **serial UART**. You can write your own program to write via serial Bluetooth, but I've included Python scripts for **Linux Ubuntu**. Installation and usage instructions are below.
 
 ## Connecting the screen
 Use the image below to connect the screen to the ESP32.
@@ -45,12 +45,14 @@ Get temperature with lm-sensors, although the way to obtain the temperature data
 
 `sudo apt install lm-sensors`
 
-_**Script python**_
+_**Script python.**_
+
 Use `linux_host_UART.py` or `linux_host_BL.py` to send data
 
  ![alt text](/assets/port.png "Port")
- 
- _**Code arduino**_
+ ![alt text](/assets/mode2.png "Serie")
+
+ _**Code arduino.**_
  
   ![alt text](/assets/mode.png "IDE Arduino")
  
@@ -62,11 +64,3 @@ Use `linux_host_UART.py` or `linux_host_BL.py` to send data
 ## Reference
 
 This project is based on: 🔗 [https://github.com/DustinWatts/Bluetooth-System-Monitor](https://github.com/DustinWatts/Bluetooth-System-Monitor)
-
-| Platform | Link|
-|:-----:|:-----|
-| [<img src="https://github.com/DustinWatts/small_logos/blob/main/twitter_logo.png" alt="Twtter" width="24"/>](https://twitter.com/dustinwattsnl "Follow me on Twitter") | You can follow me on Twitter: [@dustinwattsnl](https://twitter.com/dustinwattsnl "Follow me on Twitter")|
-| [<img src="https://github.com/DustinWatts/small_logos/blob/main/youtube_logo.png" alt="YouTube" width="32"/>](https://www.youtube.com/dustinwatts "Subscrive to my YouTube channel") | You can subscribe to my channel on Youtube: [/dustinWatts](https://www.youtube.com/dustinwatts "Subscribe to my YouTube channel") |
-| [<img src="https://github.com/DustinWatts/small_logos/blob/main/patreon_logo.png" alt="Patreon" width="32"/>](https://www.patreon.com/dustinwatts) | You can support me by becoming a patron on Patreon: https://www.patreon.com/dustinwatts |
-| [<img src="https://github.com/DustinWatts/small_logos/blob/main/paypalme_logo.png" alt="PayPal.me" width="32"/>](https://www.paypal.me/dustinwattsnl) | You can make a one time donation using PayPal.me: https://www.paypal.me/dustinwattsnl |
-

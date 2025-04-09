@@ -7,7 +7,7 @@ import re
 import glob
 
 ultimo_envio = time.time()
-serialEsp32 = "0001" # Serial Number ESP32 --> serial_dispositivos.py
+serialEsp32 = "0001" # Serial Number ESP32 --> use id_ESP32.py
 portEsp32 = None
 con = serial.Serial()
 
@@ -114,6 +114,8 @@ def free_Memory():
 
 #----------------
 newConexion()
+print("Enviando datos a ESP32...")
+
 while True:
     try:
         tiempo_actual = time.time()
